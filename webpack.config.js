@@ -5,7 +5,7 @@ const webpack = require('webpack');
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: [
-    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=2000',
     './main.js',
   ],
   output: {

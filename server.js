@@ -20,7 +20,7 @@ app.use(webpackDevMiddleware(compiler, {
 app.use(webpackHotMiddleware(compiler, {
    log: console.log,
    path: '/__webpack_hmr',
-   heartbeat: 10 * 1000,
+   heartbeat: 3 * 1000,
  }));
  
 
@@ -29,5 +29,5 @@ app.use(express.static(__dirname + '/www'));
 const server = app.listen(3000, function() {
   const host = server.address().address;
   const port = server.address().port;
-  console.log('Example app listening at http://localhost:', host, port);
+  console.log('Example app listening at http://localhost:3000', host, port);
 });
